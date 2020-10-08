@@ -1,9 +1,6 @@
 'use strict'
 
-const Category = require('../models/category')
 const Product = require('../models/product')
-const Provider = require('../models/provider')
-const Price = require('../models/price')
 
 const getProduct = (req,res) => {
     let id = req.params.id

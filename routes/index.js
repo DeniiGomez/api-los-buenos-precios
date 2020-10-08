@@ -5,6 +5,7 @@ const productCtrl = require('../controllers/product')
 const categoryCtrl = require('../controllers/category')
 const providerCtrl = require('../controllers/provider')
 const priceCtrl = require('../controllers/price')
+const searchCtrl = require('../controllers/search')
 const api = express.Router()
 
 //routes
@@ -36,4 +37,6 @@ api.post('/price', priceCtrl.savePrice)
 api.put('/price/:id', priceCtrl.updatePrice)
 api.delete('/price/:id', priceCtrl.deletePrice)
 
+//search
+api.get('/search', searchCtrl.search)
 module.exports = api
