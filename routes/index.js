@@ -40,4 +40,5 @@ api.delete('/price/:id', priceCtrl.deletePrice)
 //search
 api.get('/search', searchCtrl.search)
 
+
 module.exports = api
